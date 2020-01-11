@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <!--This is the title but also where the brain code well go. The purpose of this page is to collect data using name/value pairs.-->
+    </head>
+    <body>
+        <form action="" method="GET"><!--tThis action call the subscriber serverpage-->
+            <!--Tell me are you going to Get or Post. When the user hits submit the data collected will wrap up all the name/value pairs and pass them to the server/ dynamic page.-->
+        </form>
+        <form action=""> <!--this call in the login server page-->
+        <p>
+                Username: 
+                <input type="text" name="username" size="15" maxlength="30"/> <!--This user control is an input box expecting alpha numeric text. When this is passed to the server the data will be stored in the username field of a database.-->
+            </p> 
+            <p>
+                Password:
+                <input type="text" name="password" size="15" maxlength="30"> <!--the input text box will initially render 15 characters wide but will allow the input if 30 characters inside the same text box. Either which way only 15 characters will show at any given time.-->
+            </p>
+        </form>
+        <form action=""><!--This will call in the comments server page -->
+        <p>What did you think of the gig?</p>
+        <textarea name="comments" id="" cols="40" rows="15"></textarea> <!--This textarea allows users to write multi-line text, this will be good for comments, feedback or anything beyond a single word. For example, even FB is nothing more than a textarea and a submit button. Using the id that currently unpopulated, I can add extra styling to my textarea when we get to CSS.-->
+        <p>Your Favorite Genre:</p>
+        <input type="radio" name="genre" value="rock" checked="checked"> Rock <!--These radio buttons are control used so that only one choice can be selected and submitted. This question will respond back to the database as the option selected by the user. If this was a poll, the data could be collected for infographic, such as a bar chart. The checked option indicates which of the three or more options the user selects.-->
+        <input type="radio" name="genre" value="pop" checked="checked"> Pop
+        <input type="radio" name="genre" value="jazz" checked="checked"> Jazz
+        </form>
+        
+        <div>
+            <form action=""><!--This will call in th profile page-->
+                <p>what device do you use?</p>
+                <!--option How do you listen to music? // how do you prefered to listen to music -->
+​
+            <select name="devices" id=""> <!--In the devices section, the first option sets the selected key to equal selected. When you render it will switch to the user's choice. This the most common type of coding for a survey.-->
+                <option value="ipod" selected="selected">Ipod</option>
+                <option value="radio">Radio</option>
+                <option value="PC">Computer</option>
+                <option value="tablet">tablet</option>  
+          </select>
+            </form>
+        </div>
+        <form action="" method="POST">
+            <p>Upload your song in mp3 format here:</p>
+            <input type="file" name="usersong"/>
+            <input type="submit" value="upload"/>
+        </form>
+​
+        <form action=""> <!--This is where you will finalize what happens when the data set to the active server page.-->
+            <p>Add your email to subscribe to my channel:</p>
+            <input type="text" name="email">
+            <input type="submit" value="Subscribe!"><!-- This where the button exist and is labeled for the interface.-->
+        </form>
+    </body>
+</html>
+
+
+
+
